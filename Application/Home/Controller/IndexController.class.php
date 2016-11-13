@@ -6,6 +6,7 @@ class IndexController extends Controller {
         S(array('type'=>'memcache','host'=>'localhost','port'=>11211));
         $index_key=md5("column_news_service_produts_key");
         $info=S($index_key);
+        //S($index_key,null);
         if(empty($info)){
             //查出所有栏目
             $column = D('column');
